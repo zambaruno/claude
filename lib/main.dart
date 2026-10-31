@@ -508,7 +508,7 @@ class _DraggableMarkState extends State<DraggableMark> {
       left: x,
       top: y,
       child: GestureDetector(
-        onTap: openFreeDiagnostic,
+        onTap: () => openSite('https://www.zambaruno.com'),
         onPanUpdate: (d) =>
             setState(() => pos = Offset(x + d.delta.dx, y + d.delta.dy)),
         onPanEnd: (_) => setState(() {
